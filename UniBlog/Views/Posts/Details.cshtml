@@ -1,0 +1,36 @@
+﻿@model UniBlog.Models.Post
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ComentarioID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ComentarioID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Areas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Areas.AreaID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuarios)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuarios.UsuarioID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PostId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,37 +1,31 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using UniBlog.Dados;
-using Microsoft.EntityFrameworkCore;
+﻿
+ASP.NET MVC core dependencies have been added to the project.
+(These dependencies include packages required to enable scaffolding)
 
-namespace UniBlog
-{
-    public class Startup
-    {
+However you may still need to do make changes to your project.
+
+1. Suggested changes to Startup class:
+    1.1 Add a constructor:
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
-
+    1.2 Add MVC services:
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BlogContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            // Add framework services.
             services.AddMvc();
-        }
+       }
+
+    1.3 Configure web app to use use Configuration and use MVC routing:
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
             }
 
             app.UseStaticFiles();
@@ -43,5 +37,3 @@ namespace UniBlog
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
-    }
-}

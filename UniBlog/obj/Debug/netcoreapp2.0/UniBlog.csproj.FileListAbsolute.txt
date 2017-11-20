@@ -9,3 +9,14 @@ C:\Users\Victor\Source\Repos\UniBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.Ass
 C:\Users\Victor\Source\Repos\UniBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.AssemblyInfo.cs
 C:\Users\Victor\Source\Repos\UniBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.dll
 C:\Users\Victor\Source\Repos\UniBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.pdb
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\bin\Debug\netcoreapp2.0\UniBlog.deps.json
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\bin\Debug\netcoreapp2.0\UniBlog.runtimeconfig.json
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\bin\Debug\netcoreapp2.0\UniBlog.runtimeconfig.dev.json
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\bin\Debug\netcoreapp2.0\UniBlog.dll
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\bin\Debug\netcoreapp2.0\UniBlog.pdb
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.csprojResolveAssemblyReference.cache
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.csproj.CoreCompileInputs.cache
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.AssemblyInfoInputs.cache
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.AssemblyInfo.cs
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.dll
+C:\Users\Victor\Desktop\UniFacisaBlog\UniBlog\obj\Debug\netcoreapp2.0\UniBlog.pdb
