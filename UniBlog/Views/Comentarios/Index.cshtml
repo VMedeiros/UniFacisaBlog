@@ -1,0 +1,41 @@
+﻿@model IEnumerable<UniBlog.Models.Comentario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Cadastro de Comentário</h2>
+
+<p>
+    <a asp-action="Create">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Texto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataCadastro2)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Texto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastro2)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ComentarioID">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ComentarioID">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.ComentarioID">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

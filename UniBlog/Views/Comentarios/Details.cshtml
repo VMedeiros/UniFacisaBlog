@@ -1,0 +1,30 @@
+﻿@model UniBlog.Models.Comentario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Comentário</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Texto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Texto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCadastro2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataCadastro2)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ComentarioID">Edit</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

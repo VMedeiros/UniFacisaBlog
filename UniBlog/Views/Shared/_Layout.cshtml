@@ -27,16 +27,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Bem-Vindo" asp-action="Index" class="navbar-brand">Unifacisa Blog</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Unifacisa Blog</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Areas" asp-action="Index">Areas</a></li>
+                    <li><a asp-area="" asp-controller="Areas" asp-action="Index">Áreas</a></li>
                     <li><a asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a></li>
                     <li><a asp-area="" asp-controller="Posts" asp-action="Index">Posts</a></li>
-                    <li><a asp-area="" asp-controller="Comentarios" asp-action="Index">Comentário</a></li>
+                    <li><a asp-area="" asp-controller="Comentarios" asp-action="Index">Comentários</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Sobre</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +44,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p> Sistemas de Informação &copy; 2017 - Victor Medeiros </p>
+            <p align="center"> Sistemas de Informação &copy; 2017 - Victor Medeiros </p>
         </footer>
     </div>
 

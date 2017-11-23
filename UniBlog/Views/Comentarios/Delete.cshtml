@@ -1,0 +1,33 @@
+﻿@model UniBlog.Models.Comentario
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Deletar</h2>
+
+<h3>Você tem certeza que deseja deletar isso?</h3>
+<div>
+    <h4>Comentário</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Texto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Texto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCadastro2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataCadastro2)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ComentarioID" />
+        <input type="submit" value="Deletar" class="btn btn-default" /> |
+        <a asp-action="Index">Voltar</a>
+    </form>
+</div>
